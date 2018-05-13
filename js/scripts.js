@@ -33,5 +33,14 @@ function operate(operator, num1, num2) {
   }
 }
 
+const keys = document.querySelector('.keys');
+
 const display = document.querySelector('#display');
-display.textContent = '999999999';
+display.textContent = '';
+
+const numbers = document.querySelectorAll('.number');
+numbers.forEach((number) => {
+  number.addEventListener('click', (e) => {
+    display.textContent += e.target.value;
+  });
+});
