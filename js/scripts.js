@@ -32,3 +32,6 @@ function operate(operator, num1, num2) {
       return `${operator} is not a valid operator.`;
   }
 }
+
+const display = document.querySelector('#display');
+display.textContent = '999999999';
